@@ -199,6 +199,43 @@
   .budget-card.lime .budget-bar { background: var(--lime); width: 13%; }
   .budget-card.pink .budget-bar { background: #e879a0; width: 13%; }
 
+  /* PRICING */
+  .pricing-section { background: var(--white); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
+  .pricing-card {
+    background: var(--white);
+    border-radius: 20px;
+    border: 1.5px solid rgba(91,157,245,0.18);
+    padding: 30px 24px;
+    box-shadow: 0 6px 24px rgba(26,31,60,0.05);
+  }
+  .pricing-card h4 { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+  .pricing-price { font-family: 'Playfair Display', serif; font-size: 34px; line-height: 1.15; color: var(--navy); font-weight: 900; margin-bottom: 12px; }
+  .pricing-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .pricing-card ul { list-style: none; margin-top: 14px; }
+  .pricing-card ul li { font-size: 13px; color: var(--text); line-height: 1.6; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .pricing-card ul li:last-child { border-bottom: none; }
+  .pricing-card ul li::before { content: "• "; color: var(--teal); font-weight: 700; }
+  .pricing-card.featured {
+    background: linear-gradient(140deg, var(--navy2), #173861);
+    border-color: rgba(200,240,74,0.45);
+    box-shadow: 0 10px 36px rgba(26,31,60,0.22);
+  }
+  .pricing-card.featured h4 { color: var(--lime); }
+  .pricing-card.featured .pricing-price { color: #fff; }
+  .pricing-card.featured p { color: rgba(255,255,255,0.7); }
+  .pricing-card.featured ul li { color: rgba(255,255,255,0.9); border-bottom-color: rgba(255,255,255,0.1); }
+  .pricing-note {
+    margin-top: 20px;
+    border-radius: 16px;
+    background: var(--section-alt);
+    border: 1px solid rgba(45,217,164,0.3);
+    padding: 18px 20px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.75;
+  }
+
   /* VALUES */
   .values-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; margin-top: 52px; }
   .value-card {
@@ -311,7 +348,7 @@
   @media (max-width: 900px) {
     nav { padding: 0 20px; }
     .nav-links { display: none; }
-    .who-grid, .stp-grid, .budget-grid, .insight-cards, .values-grid, .avatar-grid, .ethics-grid, .launch-steps, .pr-cards, .mvv-grid, .problem-grid, .identity-grid { grid-template-columns: 1fr; }
+    .who-grid, .stp-grid, .budget-grid, .pricing-grid, .insight-cards, .values-grid, .avatar-grid, .ethics-grid, .launch-steps, .pr-cards, .mvv-grid, .problem-grid, .identity-grid { grid-template-columns: 1fr; }
     .positioning-box { grid-column: 1; }
     section { padding: 64px 16px; }
     .campaign-hero { padding: 48px 24px; }
@@ -747,6 +784,53 @@
         <p>Launch event with 500 real families. Media coverage in parenting publications. Partnerships with top 100 schools. Child psychologist endorsements. WhatsApp community seeding.</p>
         <div class="budget-bar"></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING STRATEGY -->
+<section class="pricing-section">
+  <div class="container">
+    <p class="section-label">11 — Pricing Strategy</p>
+    <h2 class="section-title">Monetization Built for Trust & Scale</h2>
+    <p class="section-sub">A freemium-first model to remove adoption friction, with premium plans for advanced matching, verified network benefits, and family-level coordination.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h4>Starter</h4>
+        <div class="pricing-price">₹0 / month</div>
+        <p>Entry plan focused on trust onboarding and habit creation.</p>
+        <ul>
+          <li>Basic profile and parent verification</li>
+          <li>Limited weekly match suggestions</li>
+          <li>Community safety guidelines access</li>
+        </ul>
+      </div>
+      <div class="pricing-card featured">
+        <h4>Plus (Core Revenue)</h4>
+        <div class="pricing-price">₹299 / month</div>
+        <p>Primary target tier for active urban families.</p>
+        <ul>
+          <li>Unlimited smart matching and filters</li>
+          <li>Playdate scheduler with reminders</li>
+          <li>Priority support and trust badges</li>
+          <li>Family activity recommendations</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h4>Family Pro</h4>
+        <div class="pricing-price">₹899 / quarter</div>
+        <p>Best value plan for households with recurring playdate activity.</p>
+        <ul>
+          <li>Everything in Plus</li>
+          <li>Multi-child profile management</li>
+          <li>Advanced neighborhood insights</li>
+          <li>Quarterly partner event access</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pricing-note">
+      <strong>Revenue Mix (Year 1 target):</strong> 70% subscription (Plus + Pro), 20% school/community partnerships, 10% brand collaborations. 
+      <strong>Unit Economics Goal:</strong> Keep CAC below ₹600 and target 6-8 month payback through annualized retention and referral loops.
     </div>
   </div>
 </section>
