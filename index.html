@@ -82,6 +82,27 @@
     background: rgba(255,255,255,0.08);
   }
   .badge.accent { background: var(--lime); color: var(--navy); border-color: var(--lime); font-weight: 700; }
+  .hero-media-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: 1px solid rgba(45,217,164,0.55);
+    background: rgba(45,217,164,0.16);
+    color: #d4fff3;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+  .hero-media-link:hover {
+    transform: translateY(-1px);
+    background: rgba(45,217,164,0.24);
+    border-color: rgba(200,240,74,0.8);
+  }
   .scroll-hint { position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%); z-index: 1; animation: bounce 2s infinite; }
   .scroll-hint svg { width: 24px; height: 24px; stroke: rgba(255,255,255,0.4); }
   @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
@@ -331,6 +352,7 @@
     <span class="badge">For Parents & Kids</span>
     <span class="badge">India 2025</span>
   </div>
+  <a class="hero-media-link" href="https://drive.google.com/drive/folders/1Z1DbLjgjiduq3jtMQH9yJg4alhiHfdOc" target="_blank" rel="noopener noreferrer">Media Link</a>
   <div class="scroll-hint">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
   </div>
@@ -705,25 +727,25 @@
     <div class="budget-grid">
       <div class="budget-card blue">
         <h4>Digital Marketing</h4>
-        <div class="budget-pct">45%</div>
+        <div class="budget-pct">₹4.5 Cr</div>
         <p>Instagram & YouTube Reels targeting millennial parents. Performance ads with emotional hooks. SEO content for "safe playdate apps India." Retargeting parents who searched child safety.</p>
         <div class="budget-bar"></div>
       </div>
       <div class="budget-card teal">
         <h4>Influencer Marketing</h4>
-        <div class="budget-pct">22%</div>
+        <div class="budget-pct">₹2.2 Cr</div>
         <p>50+ verified parenting influencers. 200+ micro creators (5K–50K). Real family stories — no scripts. Pediatricians, child psychologists, mommy bloggers sharing genuine experiences.</p>
         <div class="budget-bar"></div>
       </div>
       <div class="budget-card lime">
         <h4>Outdoor & On-Ground</h4>
-        <div class="budget-pct">13%</div>
+        <div class="budget-pct">₹1.3 Cr</div>
         <p>Emotional storytelling hoardings outside schools. Society notice boards. Park activations. "My Pal Gets Me" wall installations with QR codes linking to real friendship stories.</p>
         <div class="budget-bar"></div>
       </div>
       <div class="budget-card pink">
         <h4>PR & Community</h4>
-        <div class="budget-pct">13%</div>
+        <div class="budget-pct">₹1.3 Cr</div>
         <p>Launch event with 500 real families. Media coverage in parenting publications. Partnerships with top 100 schools. Child psychologist endorsements. WhatsApp community seeding.</p>
         <div class="budget-bar"></div>
       </div>
@@ -756,41 +778,10 @@
   </div>
 </section>
 
-<!-- LAUNCH PLAN -->
-<section style="background:var(--section-alt)">
-  <div class="container">
-    <p class="section-label">12 — Product Launch</p>
-    <h2 class="section-title">Launch Day Experience</h2>
-    <div class="launch-steps">
-      <div class="launch-step">
-        <div class="step-num">01</div>
-        <div class="step-card">
-          <h4>6 Weeks Before: Seed</h4>
-          <p>Invite 500 beta families. Build WhatsApp communities. Capture their playdate stories. Create a waitlist with referral mechanics — each invite = faster access.</p>
-        </div>
-      </div>
-      <div class="launch-step">
-        <div class="step-num">02</div>
-        <div class="step-card">
-          <h4>Launch Day: Ignite</h4>
-          <p>Simultaneous events in Delhi, Mumbai, Bangalore. 100 real playdates happening live. Instagram LIVE with 10 celebrity parents. "My Pal Gets Me" trend drops at 9AM.</p>
-        </div>
-      </div>
-      <div class="launch-step">
-        <div class="step-num">03</div>
-        <div class="step-card">
-          <h4>Week 2–4: Amplify</h4>
-          <p>UGC flood — parents posting first playdate photos. Influencer waves. PR hits ET, HT, TOI parenting sections. School partnership announcements. Pediatrician co-signs go live.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ETHICS -->
 <section id="ethics">
   <div class="container">
-    <p class="section-label">13 — Trust & Ethics Framework</p>
+    <p class="section-label">12 — Trust & Ethics Framework</p>
     <h2 class="section-title">Safety Is Not a Feature. It's Our Foundation.</h2>
     <div class="ethics-grid">
       <div class="ethics-card">
